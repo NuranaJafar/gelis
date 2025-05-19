@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gəl İş — Arzundakı İşə Bir Addım</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f6f9fc;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    nav {
+      background: #e0f7fa;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      color: #00796b;
+    }
+
+    .logo i {
+      margin-right: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #00796b;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #004d40;
+    }
+
+    header {
+      background: linear-gradient(to right, #e0f2f1, #b2dfdb);
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #004d40;
+      margin-bottom: 1rem;
+    }
+
+    .hero span {
+      color: #00796b;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+
+    .btn {
+      background: #00796b;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background: #004d40;
+    }
+
+    section {
+      padding: 4rem 2rem;
+    }
+
+    .bubble {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    .bubble h2 {
+      color: #00695c;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .bubble p, .bubble ul, .bubble li {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: #e0f2f1;
+      padding: 1.5rem;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card i {
+      font-size: 2rem;
+      color: #004d40;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    footer {
+      background: #e0f2f1;
+      padding: 1.5rem;
+      text-align: center;
+      color: #00695c;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <i class="fas fa-briefcase"></i>
+      <h1>Gəl İş</h1>
+    </div>
+    <ul>
+      <li><a href="#home">Əsas</a></li>
+      <li><a href="#about">Haqqımızda</a></li>
+      <li><a href="#services">Xidmətlər</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <div class="hero">
+      <h2>Arzundakı İşə <span>Bir Addım</span> Yaxınlaş</h2>
+      <p>Gəl İş — Səni gələcəyinlə tanış edən platformadır.</p>
+      <a href="#services" class="btn">Xidmətlərə keç</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="bubble">
+      <h2>Biz Kimik?</h2>
+      <p>Gəl İş — Azərbaycanda işə qəbul sahəsində yenilikçi yanaşma gətirən sosial platformadır. Məqsədimiz həm iş axtaranlara, həm də işəgötürənlərə ən doğru və əlverişli seçimləri təqdim etməkdir. </p>
+
+      <p>Əsas hədəfimiz: “Gəl İş” layihəsinin məqsədi gənclərə iş tapmaqda kömək etməkdir. Layihə, iş axtaran gənclərlə şirkətləri bir araya gətirir. Gənclər bu platforma vasitəsilə iş elanlarına baxa, müraciət edə və faydalı məlumatlar əldə edə bilərlər.
+
+Layihə həmçinin gənclərin özlərini inkişaf etdirməsi üçün təlimlər və məsləhətlər təqdim edir. CV yazma, müsahibəyə hazırlaşma və bacarıqlarını artırmaq kimi mövzularda dəstək göstərir.
+
+“Gəl İş” gənclərin iş tapmasını asanlaşdırmaq, onları motivasiya etmək və gələcəkdə daha uğurlu olmalarına kömək etmək üçün yaradılıb.
+
+ </p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="bubble">
+      <h2>Xidmətlərimiz</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-upload"></i>
+          <h3>CV Yerləşdir</h3>
+          <p>Profilini yaradaraq CV-ni sistemə yüklə və iş təkliflərini ilk sən al.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-bullhorn"></i>
+          <h3>Vakansiya Elanı</h3>
+          <p>Şirkətiniz üçün ən uyğun namizədləri bizim vasitə ilə tapın.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-user-check"></i>
+          <h3>İşə Qəbul Təlimləri</h3>
+          <p>Müsahibəyə necə hazırlaşmalı? Psixoloji və texniki dəstək xidmətlərimiz mövcuddur.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>Karyera Məşvərətləri</h3>
+          <p>Peşəkar məsləhətlərlə karyerana yeni yön ver.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Motivasiya və Dəstək</h3>
+          <p>Hər kəsin dəstəyə ehtiyacı var. Gəl İş sənin yanındadır.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="bubble">
+      <h2>Faydalı Məqalələr</h2>
+      <p>İş tapmağın yolları, CV yazmaq texnikaları, müsahibə strategiyaları haqqında ən aktual məlumatlar burada:</p>
+      <ul>
+        <li><strong>CV necə yazılmalıdır?</strong> — Nümunələrlə dolu geniş məqalə</li>
+        <li><strong>İlk iş təcrübəsi üçün addımlar</strong> — Gənclər üçün xüsusi bələdçi</li>
+        <li><strong>Müsahibədə özünü necə təqdim etməli?</strong> — Etkili çıxış taktikaları</li>
+        <li><strong>LinkedIn profili necə qurulmalıdır?</strong> — Rəqəmsal görünüşünü gücləndir</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gəl İş. Platformanı sevgi ilə hazırladıq. <br> Hazırladı : DOST Könüllü Komandası</p>
+  </footer>
+
+</body>
+</html>
